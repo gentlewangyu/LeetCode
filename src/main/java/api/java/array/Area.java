@@ -12,6 +12,11 @@ public class Area {
                 + "; 时间复杂度o(n),空间复杂度o(1)");
     }
 
+    /**
+     * 暴力解法
+     * @param height
+     * @return
+     */
     public int maxArea(int[] height) {
        int length = height.length;
        int maxArea = 0;
@@ -23,6 +28,11 @@ public class Area {
        return maxArea;
     }
 
+    /**
+     * 双指针法
+     * @param height
+     * @return
+     */
     public int maxArea2(int[] height) {
         int length = height.length;
         int i = 0, j = length - 1;
